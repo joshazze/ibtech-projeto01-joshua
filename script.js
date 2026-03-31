@@ -562,3 +562,5 @@
 /* style: nightstand drawer handles redimensionados */
 
 /* feat: clock hands agora rotacionam suavemente */
+
+/* refactor: polaroid markup simplificado */
