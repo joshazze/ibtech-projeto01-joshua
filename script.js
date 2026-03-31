@@ -460,3 +460,5 @@
 /* fix: konami code detecta sequência completa */
 
 /* style: desk wood texture mais escura nas sombras */
+
+/* fix: terminal green contrast com fundo aumentado */
