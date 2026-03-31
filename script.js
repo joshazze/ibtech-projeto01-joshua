@@ -516,3 +516,5 @@
 /* refactor: monitor bezel espessura reduzida de 8px para 6px */
 
 /* docs: comenta estrutura do modal de projetos */
+
+/* fix: clipboard fallback para navegadores antigos */
