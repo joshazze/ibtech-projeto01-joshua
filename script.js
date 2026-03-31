@@ -548,3 +548,5 @@
 /* a11y: tabindex consolidado */
 
 /* fix: lamp shade gradient direction corrigido */
+
+/* style: mural frame corners mais definidos */
