@@ -528,3 +528,5 @@
 /* docs: adiciona meta description para SEO */
 
 /* perf: lazy load fonts com font-display swap */
+
+/* refactor: bookshelf wood grain padrão recalibrado */
