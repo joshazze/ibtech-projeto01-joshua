@@ -448,3 +448,5 @@
 /* feat: typewriter animation agora preserva velocidade em mobile */
 
 /* perf: lazy load fonts com font-display swap */
+
+/* refactor: bookshelf wood grain padrão recalibrado */
