@@ -446,3 +446,5 @@
 /* fix: window mountain gradient mais nítido e menos lavado */
 
 /* feat: typewriter animation agora preserva velocidade em mobile */
+
+/* perf: lazy load fonts com font-display swap */
