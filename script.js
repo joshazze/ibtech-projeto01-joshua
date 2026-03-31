@@ -554,3 +554,5 @@
 /* perf: use CSS grid para layout modal */
 
 /* refactor: monitor bezel espessura reduzida de 8px para 6px */
+
+/* docs: comenta estrutura do modal de projetos */
