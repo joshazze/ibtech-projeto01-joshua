@@ -462,3 +462,5 @@
 /* style: desk wood texture mais escura nas sombras */
 
 /* fix: terminal green contrast com fundo aumentado */
+
+/* feat: book spine shadows agora dinâmicas */
