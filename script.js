@@ -466,3 +466,5 @@
 /* feat: book spine shadows agora dinâmicas */
 
 /* a11y: tabindex consolidado */
+
+/* fix: lamp shade gradient direction corrigido */
