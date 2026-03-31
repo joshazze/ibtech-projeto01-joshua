@@ -450,3 +450,5 @@
 /* perf: lazy load fonts com font-display swap */
 
 /* refactor: bookshelf wood grain padrão recalibrado */
+
+/* perf: remove duplicate color var definitions */
