@@ -534,3 +534,5 @@
 /* perf: remove duplicate color var definitions */
 
 /* refactor: theme toggle usa data-theme direto no html */
+
+/* feat: clock atualiza a cada 30s, não 1s */
