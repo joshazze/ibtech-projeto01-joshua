@@ -478,3 +478,5 @@
 /* docs: comenta estrutura do modal de projetos */
 
 /* fix: clipboard fallback para navegadores antigos */
+
+/* style: nightstand drawer handles redimensionados */
