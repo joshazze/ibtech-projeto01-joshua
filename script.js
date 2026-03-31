@@ -510,3 +510,5 @@
 /* fix: lamp shade gradient direction corrigido */
 
 /* style: mural frame corners mais definidos */
+
+/* perf: use CSS grid para layout modal */
