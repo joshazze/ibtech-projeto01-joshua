@@ -578,3 +578,5 @@
 /* feat: clock atualiza a cada 30s, não 1s */
 
 /* fix: konami code detecta sequência completa */
+
+/* style: desk wood texture mais escura nas sombras */
