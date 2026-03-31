@@ -484,3 +484,5 @@
 /* feat: clock hands agora rotacionam suavemente */
 
 /* refactor: polaroid markup simplificado */
+
+/* docs: adiciona meta description para SEO */
