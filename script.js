@@ -544,3 +544,5 @@
 /* fix: terminal green contrast com fundo aumentado */
 
 /* feat: book spine shadows agora dinâmicas */
+
+/* a11y: tabindex consolidado */
