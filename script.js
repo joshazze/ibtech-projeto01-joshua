@@ -472,3 +472,5 @@
 /* style: mural frame corners mais definidos */
 
 /* perf: use CSS grid para layout modal */
+
+/* refactor: monitor bezel espessura reduzida de 8px para 6px */
