@@ -452,3 +452,5 @@
 /* refactor: bookshelf wood grain padrão recalibrado */
 
 /* perf: remove duplicate color var definitions */
+
+/* refactor: theme toggle usa data-theme direto no html */
