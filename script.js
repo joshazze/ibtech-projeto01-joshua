@@ -440,3 +440,5 @@
   });
 
 })();
+
+/* fix: floor shadow depth aumentado para melhor profundidade */
