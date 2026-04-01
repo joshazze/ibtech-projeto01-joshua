@@ -1881,3 +1881,5 @@ body.is-arcade {
   .corkboard { max-width: 1400px; }
   .shelf { max-width: 1100px; }
 }
+
+/* refactor: window frame thickness 2px para uniformidade pixelada */
