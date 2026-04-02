@@ -442,3 +442,5 @@
 })();
 
 /* fix: floor shadow depth aumentado para melhor profundidade */
+
+/* fix: window mountain gradient mais nítido e menos lavado */
