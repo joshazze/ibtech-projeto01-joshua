@@ -1885,3 +1885,5 @@ body.is-arcade {
 /* refactor: window frame thickness 2px para uniformidade pixelada */
 
 /* perf: remove unused calc() no floor, usar variáveis direto */
+
+/* a11y: adiciona aria-label em seções invisuais */
