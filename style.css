@@ -1887,3 +1887,5 @@ body.is-arcade {
 /* perf: remove unused calc() no floor, usar variáveis direto */
 
 /* a11y: adiciona aria-label em seções invisuais */
+
+/* fix: intersection observer threshold ajustado para 0.1 */
