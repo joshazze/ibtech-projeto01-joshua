@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 96" shape-rendering="crispEdges" width="240" height="288">
+  <title>Foto polaroide pixelada de uma montanha com bandeira escoteira no topo</title>
+  <!-- polaroid frame -->
+  <rect width="80" height="96" fill="#f5ecd9"/>
+  <rect x="4" y="4" width="72" height="72" fill="#1a1a2e"/>
+  <!-- sky gradient (chunky) -->
+  <rect x="4" y="4" width="72" height="20" fill="#7ec8e3"/>
+  <rect x="4" y="14" width="72" height="10" fill="#a8dadc"/>
+  <!-- sun -->
+  <rect x="58" y="8" width="8" height="8" fill="#ffd166"/>
+  <rect x="56" y="10" width="2" height="4" fill="#ffd166"/>
+  <rect x="66" y="10" width="2" height="4" fill="#ffd166"/>
+  <rect x="60" y="6" width="4" height="2" fill="#ffd166"/>
+  <rect x="60" y="16" width="4" height="2" fill="#ffd166"/>
+  <!-- back mountains -->
+  <polygon points="4,40 16,24 28,40" fill="#5e6472"/>
+  <polygon points="20,44 36,22 52,44" fill="#4a5061"/>
+  <polygon points="44,42 60,26 76,42" fill="#5e6472"/>
+  <!-- snow caps -->
+  <polygon points="32,28 36,22 40,28" fill="#f5ecd9"/>
+  <polygon points="56,32 60,26 64,32" fill="#f5ecd9"/>
+  <!-- foreground hill -->
+  <rect x="4" y="44" width="72" height="32" fill="#3d6b3d"/>
+  <rect x="4" y="44" width="72" height="4" fill="#4f8a4f"/>
+  <!-- pine trees -->
+  <rect x="10" y="46" width="2" height="6" fill="#2b4a2b"/>
+  <polygon points="8,52 12,42 16,52" fill="#2b4a2b"/>
+  <rect x="22" y="48" width="2" height="6" fill="#2b4a2b"/>
+  <polygon points="20,54 24,46 28,54" fill="#2b4a2b"/>
+  <rect x="64" y="48" width="2" height="6" fill="#2b4a2b"/>
+  <polygon points="62,54 66,46 70,54" fill="#2b4a2b"/>
+  <!-- flag pole on summit -->
+  <rect x="37" y="14" width="1" height="10" fill="#2b1810"/>
+  <rect x="38" y="14" width="6" height="4" fill="#8b3a3a"/>
+  <!-- caption -->
+  <text x="40" y="88" font-family="monospace" font-size="6" fill="#2b1810" text-anchor="middle">PÁTRIA · 2024</text>
+</svg>

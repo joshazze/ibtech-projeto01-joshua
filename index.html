@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cartão de visita de Joshua Azze Distel — engenharia da computação, IA, robótica. Um quarto de chalé pixelado em primeira pessoa.">
+  <meta name="author" content="Joshua Azze Distel">
+  <meta name="theme-color" content="#3d2817">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Joshua Azze Distel — IbTech 2026.1">
+  <meta property="og:description" content="Um quarto de chalé pixelado em primeira pessoa. Computer engineering · IA · Robótica · APIs.">
+  <meta property="og:image" content="assets/og-image.svg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Joshua Azze Distel">
+  <meta name="twitter:description" content="Engenharia da computação · IbTech · Ibmec BH">
+  <meta name="twitter:image" content="assets/og-image.svg">
+
+  <title>Joshua Azze Distel — Engenharia da Computação · IbTech 2026.1</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#mesa">Pular para o conteúdo</a>
+
+  <header class="topbar" role="banner">
+    <div class="topbar__inner">
+      <a class="topbar__brand" href="#janela" aria-label="Voltar para o início">
+        <span class="pixel-logo" aria-hidden="true"></span>
+        <span class="topbar__name">JOSHUA<span class="topbar__name-sub">.azze</span></span>
+      </a>
+
+      <nav class="topbar__nav" aria-label="Navegação pelo quarto">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#janela">Janela</a></li>
+          <li><a href="#mesa">Mesa</a></li>
+          <li><a href="#mural">Mural</a></li>
+          <li><a href="#prateleira">Prateleira</a></li>
+          <li><a href="#cabeceira">Cabeceira</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar entre dia e noite" aria-pressed="false">
+        <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+          <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><rect x="6" y="2" width="4" height="2"/><rect x="6" y="12" width="4" height="2"/><rect x="2" y="6" width="2" height="4"/><rect x="12" y="6" width="2" height="4"/><rect x="4" y="4" width="8" height="8"/><rect x="3" y="5" width="2" height="6"/><rect x="11" y="5" width="2" height="6"/><rect x="5" y="3" width="6" height="2"/><rect x="5" y="11" width="6" height="2"/></svg>
+        </span>
+        <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+          <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><rect x="4" y="2" width="6" height="2"/><rect x="3" y="4" width="6" height="2"/><rect x="2" y="6" width="6" height="4"/><rect x="3" y="10" width="6" height="2"/><rect x="4" y="12" width="6" height="2"/></svg>
+        </span>
+        <span class="visually-hidden">Tema</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ====================================================== -->
+    <!-- JANELA — vista das montanhas. Apresentação inicial.    -->
+    <!-- ====================================================== -->
+    <section class="scene scene--window" id="janela" aria-labelledby="janela-title">
+      <div class="scene__art" aria-hidden="true">
+        <div class="window-frame">
+          <div class="sky">
+            <div class="sun-moon"></div>
+            <div class="cloud cloud--1"></div>
+            <div class="cloud cloud--2"></div>
+            <div class="stars" aria-hidden="true"></div>
+          </div>
+          <div class="mountains">
+            <div class="mountain mountain--back"></div>
+            <div class="mountain mountain--mid"></div>
+            <div class="mountain mountain--front"></div>
+          </div>
+          <div class="trees">
+            <div class="tree" style="--x: 8%"></div>
+            <div class="tree" style="--x: 22%"></div>
+            <div class="tree" style="--x: 78%"></div>
+            <div class="tree" style="--x: 92%"></div>
+          </div>
+          <div class="window-frame__sash" aria-hidden="true"></div>
+          <div class="window-frame__sill" aria-hidden="true"></div>
+        </div>
+        <div class="curtain curtain--left" aria-hidden="true"></div>
+        <div class="curtain curtain--right" aria-hidden="true"></div>
+      </div>
+
+      <div class="scene__content scene__content--center reveal">
+        <p class="scene__eyebrow">cartão de visita · ibtech 2026.1</p>
+        <h1 id="janela-title" class="hero-title">
+          <span class="hero-title__line">JOSHUA</span>
+          <span class="hero-title__line">AZZE</span>
+          <span class="hero-title__line">DISTEL</span>
+        </h1>
+        <p class="hero-tagline">
+          <span id="typewriter" aria-live="polite"></span><span class="caret" aria-hidden="true">_</span>
+        </p>
+        <p class="hero-sub">
+          Engenharia da Computação · Ibmec BH · IbTech &amp; IbBot
+        </p>
+        <a class="btn btn--primary" href="#mesa">
+          entra no quarto
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- MESA DE ESTUDOS — monitor com "código" (sobre).        -->
+    <!-- ====================================================== -->
+    <section class="scene scene--desk" id="mesa" aria-labelledby="mesa-title">
+      <div class="scene__art" aria-hidden="true">
+        <div class="wall wall--planks"></div>
+        <div class="poster poster--ibtech">
+          <span>IB·TECH</span>
+          <small>2026.1</small>
+        </div>
+        <div class="poster poster--robot">
+          <div class="poster__robot"></div>
+          <small>IB·BOT</small>
+        </div>
+        <div class="desk">
+          <div class="desk__monitor">
+            <div class="desk__screen">
+              <div class="terminal">
+                <div class="terminal__bar">
+                  <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+                  <span class="terminal__title">~ joshua@chalet</span>
+                </div>
+                <pre class="terminal__body" aria-label="Terminal mostrando informações sobre Joshua">
+<span class="t-prompt">$</span> <span class="t-cmd">whoami</span>
+<span class="t-out">joshua azze distel — 18, computer engineering @ ibmec bh.</span>
+<span class="t-out">construo coisas que rodam de verdade. backend python/flask em gcp,</span>
+<span class="t-out">frontend vanilla, pwa instalável, push automático via scheduler.</span>
+<span class="t-out">na minha plataforma interna: 30+ usuários ativos · 150 push/sem.</span>
+
+<span class="t-prompt">$</span> <span class="t-cmd">cat skills.json</span>
+<span class="t-out">{
+  <span class="t-key">"linguagens"</span>: [<span class="t-str">"python"</span>, <span class="t-str">"javascript"</span>, <span class="t-str">"c"</span>, <span class="t-str">"html/css"</span>],
+  <span class="t-key">"infra"</span>:      [<span class="t-str">"gcp"</span>, <span class="t-str">"compute engine"</span>, <span class="t-str">"nginx"</span>, <span class="t-str">"let's encrypt"</span>],
+  <span class="t-key">"apis"</span>:       [<span class="t-str">"rest"</span>, <span class="t-str">"google sheets"</span>, <span class="t-str">"web push (vapid)"</span>],
+  <span class="t-key">"prompt_eng"</span>: <span class="t-str">"vibe coding desde 2024"</span>,
+  <span class="t-key">"idiomas"</span>:    [<span class="t-str">"pt"</span>, <span class="t-str">"it"</span>, <span class="t-str">"en"</span>, <span class="t-str">"es"</span>, <span class="t-str">"de"</span>]
+}</span>
+
+<span class="t-prompt">$</span> <span class="t-cmd">./status --now</span>
+<span class="t-out">→ diretor da iga ibtech (jan/2026 → presente)</span>
+<span class="t-out">→ co-fundador &amp; diretor da iga ibbot (ago/2025 →)</span>
+<span class="t-out">→ co-fundador da carreirai · vencedor regional bh hackathon ibmec</span>
+<span class="t-out">→ ta de matemática discreta (ago–dez/2025)</span>
+
+<span class="t-prompt">$</span> <span class="t-cursor">_</span></pre>
+              </div>
+            </div>
+            <div class="desk__stand"></div>
+          </div>
+          <div class="desk__keyboard"></div>
+          <div class="desk__mug" title="café">
+            <div class="desk__mug-steam"></div>
+          </div>
+          <div class="desk__books">
+            <div class="book-tiny book-tiny--a"></div>
+            <div class="book-tiny book-tiny--b"></div>
+          </div>
+          <div class="desk__surface"></div>
+          <div class="desk__legs"></div>
+          <div class="chair"></div>
+        </div>
+      </div>
+
+      <div class="scene__content reveal">
+        <h2 id="mesa-title" class="section-title">
+          <span class="section-title__num">01</span>
+          mesa de estudos
+        </h2>
+        <p class="lede">
+          Estudo de engenharia da computação no Ibmec BH (turma 25.1 → forma jun/29) e construo coisas que rodam de verdade. Não vim pra ficar bonito — vim pra colocar em produção.
+        </p>
+        <p>
+          Comecei codando aos 14, achei a ponte entre eletrônica e software no scout (escoteiro da pátria, prêmio máximo da União dos Escoteiros do Brasil) e tomei gosto por resolver problema concreto: alguém tinha que fazer, então fui eu. Hoje aplico isso liderando a IbTech e a IbBot, as ligas de software e robótica do Ibmec BH.
+        </p>
+        <p>
+          Sou aluno top de classe e top de programa em 25.2 (prêmio Ibmec Education Stars), mas o que me interessa de verdade é o que sai do compilador. Vibe coding, prompt engineering, IA acoplada ao fluxo — uso o que acelera entrega sem trocar entendimento por velocidade.
+        </p>
+        <p>
+          Cresci entre cinco línguas (pt · it · en · es · de) por causa do <em>Liceo Scientifico</em> da Fundação Torino, com currículo italiano. Isso explica por que esse quarto tem cara de chalé alpino.
+        </p>
+        <ul class="chips" aria-label="Áreas de interesse">
+          <li class="chip">IA aplicada</li>
+          <li class="chip">robótica</li>
+          <li class="chip">backend python</li>
+          <li class="chip">cloud (gcp)</li>
+          <li class="chip">prompt engineering</li>
+          <li class="chip">apis &amp; integrações</li>
+          <li class="chip">pwa</li>
+          <li class="chip">aventura ao ar livre</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- MURAL — quadro de cortiça com 3 polaroides + vídeo.    -->
+    <!-- ====================================================== -->
+    <section class="scene scene--corkboard" id="mural" aria-labelledby="mural-title">
+      <div class="scene__content reveal">
+        <h2 id="mural-title" class="section-title">
+          <span class="section-title__num">02</span>
+          mural de fotos
+        </h2>
+        <p class="lede">
+          O resumo gráfico de quem eu sou. Montanha, monitor, Itália — nessa ordem.
+        </p>
+      </div>
+
+      <div class="corkboard" aria-hidden="false">
+        <div class="corkboard__bg"></div>
+
+        <figure class="polaroid polaroid--1 reveal" style="--rot: -6deg">
+          <span class="pin pin--red" aria-hidden="true"></span>
+          <img src="assets/polaroid-1.svg" width="240" height="288" loading="lazy"
+               alt="Ilustração pixelada de uma montanha com bandeira escoteira no cume — referência ao prêmio Escoteiro da Pátria">
+          <figcaption>escoteiro da pátria · união dos escoteiros do brasil</figcaption>
+        </figure>
+
+        <figure class="polaroid polaroid--2 reveal" style="--rot: 4deg">
+          <span class="pin pin--yellow" aria-hidden="true"></span>
+          <img src="assets/polaroid-2.svg" width="240" height="288" loading="lazy"
+               alt="Ilustração pixelada de uma tela de computador com código verde sobre fundo preto, ao lado de uma caneca">
+          <figcaption>vibe coding · plataforma interna em produção</figcaption>
+        </figure>
+
+        <figure class="polaroid polaroid--3 reveal" style="--rot: -3deg">
+          <span class="pin pin--blue" aria-hidden="true"></span>
+          <img src="assets/polaroid-3.svg" width="240" height="288" loading="lazy"
+               alt="Ilustração pixelada de uma vila italiana com casa de telhado terracota e bandeira tricolor">
+          <figcaption>fundação torino · liceo scientifico (2020 → 2024)</figcaption>
+        </figure>
+
+        <div class="postit reveal" style="--rot: 2deg">
+          <p>“primeiro entrega, depois polimento.”</p>
+          <small>— regra fixa</small>
+        </div>
+
+        <figure class="tv reveal">
+          <span class="pin pin--red" aria-hidden="true"></span>
+          <div class="tv__frame">
+            <div class="tv__screen">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
+                title="Vídeo embedded — substituir pelo seu (YouTube)"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+            <div class="tv__knobs">
+              <span class="knob"></span><span class="knob"></span>
+            </div>
+          </div>
+          <figcaption>tv crt · troque o id do vídeo no embed pelo seu</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- PRATELEIRA — livros = projetos. Troféu = honra.        -->
+    <!-- ====================================================== -->
+    <section class="scene scene--shelf" id="prateleira" aria-labelledby="prateleira-title">
+      <div class="scene__content reveal">
+        <h2 id="prateleira-title" class="section-title">
+          <span class="section-title__num">03</span>
+          prateleira
+        </h2>
+        <p class="lede">
+          Cada livro, um projeto que entregou. Clica pra abrir.
+        </p>
+      </div>
+
+      <div class="shelf" role="list" aria-label="Projetos">
+        <div class="shelf__plank"></div>
+
+        <button class="book" type="button" role="listitem"
+                data-project="ibsala"
+                style="--book-color: #b91c1c; --book-h: 180px; --book-w: 36px"
+                aria-haspopup="dialog" aria-label="Abrir detalhes do projeto: Plataforma Interna IbSala">
+          <span class="book__spine">
+            <span class="book__title">ibsala</span>
+            <span class="book__year">2026</span>
+          </span>
+        </button>
+
+        <button class="book" type="button" role="listitem"
+                data-project="carreirai"
+                style="--book-color: #16a34a; --book-h: 195px; --book-w: 32px"
+                aria-haspopup="dialog" aria-label="Abrir detalhes do projeto: CarreirAI">
+          <span class="book__spine">
+            <span class="book__title">carreirai</span>
+            <span class="book__year">2025</span>
+          </span>
+        </button>
+
+        <button class="book" type="button" role="listitem"
+                data-project="ibbot"
+                style="--book-color: #1e3a8a; --book-h: 170px; --book-w: 40px"
+                aria-haspopup="dialog" aria-label="Abrir detalhes do projeto: IbBot">
+          <span class="book__spine">
+            <span class="book__title">ibbot</span>
+            <span class="book__year">2025+</span>
+          </span>
+        </button>
+
+        <button class="book" type="button" role="listitem"
+                data-project="ibtech"
+                style="--book-color: #facc15; --book-h: 200px; --book-w: 34px; --book-text: #2b1810"
+                aria-haspopup="dialog" aria-label="Abrir detalhes do projeto: Diretoria IbTech">
+          <span class="book__spine">
+            <span class="book__title">ibtech</span>
+            <span class="book__year">2026</span>
+          </span>
+        </button>
+
+        <button class="book" type="button" role="listitem"
+                data-project="logo150"
+                style="--book-color: #7c3aed; --book-h: 175px; --book-w: 28px"
+                aria-haspopup="dialog" aria-label="Abrir detalhes do projeto: Logo 150 anos">
+          <span class="book__spine">
+            <span class="book__title">logo·150</span>
+            <span class="book__year">2024</span>
+          </span>
+        </button>
+
+        <div class="trophy" aria-label="Troféu — Top of Class &amp; Top of Program · Ibmec Education Stars 25.2">
+          <div class="trophy__cup"></div>
+          <div class="trophy__base"></div>
+          <small>top of class · top of program · 25.2</small>
+        </div>
+      </div>
+
+      <div class="scene__content scene__content--narrow reveal" style="margin-top: 2rem">
+        <p class="muted">
+          + reconhecimentos: vencedor do concurso de logomarca dos 150 anos da imigração italiana no brasil · soft skills track (adaptive communication) · intermediate web &amp; front-end (ibmec).
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- MESA DE CABECEIRA — luminária, despertador, contato.   -->
+    <!-- ====================================================== -->
+    <section class="scene scene--nightstand" id="cabeceira" aria-labelledby="cabeceira-title">
+      <div class="scene__art" aria-hidden="true">
+        <div class="wall wall--planks"></div>
+        <div class="bed-corner"></div>
+        <div class="nightstand">
+          <div class="nightstand__top"></div>
+          <div class="nightstand__body">
+            <div class="drawer"></div>
+            <div class="drawer"></div>
+          </div>
+        </div>
+        <div class="lamp">
+          <div class="lamp__shade"></div>
+          <div class="lamp__neck"></div>
+          <div class="lamp__base"></div>
+          <div class="lamp__glow" aria-hidden="true"></div>
+        </div>
+        <div class="clock" aria-hidden="true">
+          <div class="clock__face">
+            <span class="clock__digits" id="clockDigits">--:--</span>
+          </div>
+          <div class="clock__bell clock__bell--l"></div>
+          <div class="clock__bell clock__bell--r"></div>
+          <div class="clock__feet"></div>
+        </div>
+      </div>
+
+      <div class="scene__content scene__content--narrow reveal">
+        <h2 id="cabeceira-title" class="section-title">
+          <span class="section-title__num">04</span>
+          mesa de cabeceira
+        </h2>
+        <p class="lede">
+          Onde fica o que importa: lugar pra me chamar.
+        </p>
+
+        <div class="contact-card" role="list">
+          <div class="contact-row" role="listitem">
+            <span class="contact-row__label" aria-hidden="true">e-mail</span>
+            <code class="contact-row__value" id="emailValue">jazzedistel@gmail.com</code>
+            <button class="copy-btn" id="copyEmailBtn" type="button"
+                    data-copy="jazzedistel@gmail.com"
+                    aria-label="Copiar endereço de e-mail">
+              <span class="copy-btn__label">copiar</span>
+              <span class="copy-btn__feedback" aria-hidden="true">copiado!</span>
+            </button>
+          </div>
+
+          <div class="contact-row" role="listitem">
+            <span class="contact-row__label" aria-hidden="true">linkedin</span>
+            <a class="contact-row__link" href="https://www.linkedin.com/in/joshazze"
+               target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/joshazze
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="contact-row" role="listitem">
+            <span class="contact-row__label" aria-hidden="true">github</span>
+            <a class="contact-row__link" href="https://github.com/joshazze"
+               target="_blank" rel="noopener noreferrer">
+              github.com/joshazze
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <p class="muted muted--small">
+          dica: tem easter egg escondido. tenta a sequência ↑ ↑ ↓ ↓ ← → ← → b a no teclado.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__door" aria-hidden="true">
+        <div class="door">
+          <div class="door__sign">tchau</div>
+          <div class="door__knob"></div>
+          <div class="door__panel"></div>
+          <div class="door__panel"></div>
+        </div>
+      </div>
+      <div class="footer__meta">
+        <p><strong>Joshua Azze Distel</strong> · IbTech · Trilha Frontend · Projeto 01 · 2026.1</p>
+        <p class="muted muted--small">html · css · js puros. sem framework. sem template.</p>
+        <p class="muted muted--small">construído à mão, com o terminal aberto e a janela com vista pra montanha.</p>
+        <p class="muted muted--small">
+          © 2026 Joshua Azze Distel. código sob <a href="https://opensource.org/license/mit" target="_blank" rel="noopener noreferrer">MIT</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =================================================== -->
+  <!-- DIALOG — abre quando clicam num livro da prateleira -->
+  <!-- =================================================== -->
+  <dialog class="modal" id="projectModal" aria-labelledby="modalTitle">
+    <article class="modal__inner">
+      <header class="modal__header">
+        <h3 id="modalTitle" class="modal__title">—</h3>
+        <button class="modal__close" type="button" id="modalClose" aria-label="Fechar">×</button>
+      </header>
+      <p class="modal__period" id="modalPeriod">—</p>
+      <p class="modal__role" id="modalRole">—</p>
+      <ul class="modal__bullets" id="modalBullets"></ul>
+      <ul class="modal__stack" id="modalStack" aria-label="Stack"></ul>
+    </article>
+  </dialog>
+
+  <!-- live region pra anúncios de a11y (clipboard, etc.) -->
+  <div class="visually-hidden" role="status" aria-live="polite" id="liveRegion"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

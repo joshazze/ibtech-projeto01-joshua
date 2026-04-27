@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 96" shape-rendering="crispEdges" width="240" height="288">
+  <title>Foto polaroide pixelada de uma tela de computador com código</title>
+  <!-- polaroid frame -->
+  <rect width="80" height="96" fill="#f5ecd9"/>
+  <rect x="4" y="4" width="72" height="72" fill="#0f1419"/>
+  <!-- desk surface -->
+  <rect x="4" y="62" width="72" height="14" fill="#5a3a22"/>
+  <rect x="4" y="62" width="72" height="2" fill="#7a5232"/>
+  <!-- monitor body -->
+  <rect x="14" y="14" width="52" height="38" fill="#2c2c2c"/>
+  <rect x="16" y="16" width="48" height="32" fill="#0a1a0a"/>
+  <!-- code lines green-on-black -->
+  <rect x="18" y="18" width="14" height="2" fill="#7fdb7f"/>
+  <rect x="34" y="18" width="6" height="2" fill="#a3e635"/>
+  <rect x="20" y="22" width="20" height="2" fill="#7fdb7f"/>
+  <rect x="42" y="22" width="8" height="2" fill="#fde047"/>
+  <rect x="20" y="26" width="10" height="2" fill="#7fdb7f"/>
+  <rect x="32" y="26" width="14" height="2" fill="#60a5fa"/>
+  <rect x="18" y="30" width="6" height="2" fill="#a3e635"/>
+  <rect x="26" y="30" width="22" height="2" fill="#7fdb7f"/>
+  <rect x="20" y="34" width="16" height="2" fill="#7fdb7f"/>
+  <rect x="38" y="34" width="10" height="2" fill="#fde047"/>
+  <rect x="18" y="38" width="30" height="2" fill="#7fdb7f"/>
+  <rect x="20" y="42" width="6" height="2" fill="#7fdb7f"/>
+  <rect x="56" y="42" width="2" height="2" fill="#7fdb7f"/>
+  <!-- monitor stand -->
+  <rect x="36" y="52" width="8" height="6" fill="#2c2c2c"/>
+  <rect x="30" y="58" width="20" height="2" fill="#2c2c2c"/>
+  <!-- mug -->
+  <rect x="6" y="56" width="8" height="6" fill="#8b3a3a"/>
+  <rect x="14" y="58" width="2" height="2" fill="#8b3a3a"/>
+  <rect x="8" y="54" width="2" height="2" fill="#cccccc" opacity="0.5"/>
+  <!-- caption -->
+  <text x="40" y="88" font-family="monospace" font-size="6" fill="#2b1810" text-anchor="middle">VIBE CODING</text>
+</svg>
