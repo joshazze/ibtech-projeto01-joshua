@@ -1378,14 +1378,14 @@ ul { list-style: none; padding: 0; }
 /* luminária — apoiada em cima do criado mudo (left side) */
 .lamp {
   position: absolute;
-  bottom: 100%;     /* sobe até o topo do nightstand */
+  bottom: 100%;          /* sobe até o topo do nightstand */
   left: 16px;
   width: 96px;
-  height: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 0;
+  /* sem altura fixa: encolhe pro tamanho dos filhos pra base
+     encostar exatamente no topo da móvel */
 }
 .lamp__shade {
   width: 72px; height: 46px;
@@ -1417,28 +1417,29 @@ ul { list-style: none; padding: 0; }
 /* despertador — apoiado em cima do criado mudo (right side) */
 .clock {
   position: absolute;
-  bottom: 100%;      /* sobe até o topo do nightstand */
+  bottom: 100%;          /* sobe até o topo do nightstand */
   right: 24px;
-  width: 86px;
-  height: 84px;
+  width: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .clock__face {
-  width: 76px; height: 64px;
+  width: 100px; height: 64px;
   background: var(--c-paper);
   border: 4px solid var(--c-ink);
   display: grid;
   place-items: center;
   position: relative;
   z-index: 1;
+  padding: 0 6px;
 }
 .clock__digits {
   font-family: var(--font-pixel);
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   color: var(--c-accent);
-  letter-spacing: 0.05em;
+  letter-spacing: 0;
+  line-height: 1;
 }
 .clock__bell {
   position: absolute;
@@ -1449,8 +1450,8 @@ ul { list-style: none; padding: 0; }
   border-radius: 50% 50% 0 0;
   z-index: 0;
 }
-.clock__bell--l { left: 10px;  transform: rotate(-22deg); }
-.clock__bell--r { right: 10px; transform: rotate(22deg); }
+.clock__bell--l { left: 14px; transform: rotate(-22deg); }
+.clock__bell--r { right: 14px; transform: rotate(22deg); }
 .clock__feet {
   width: 48px; height: 6px;
   background:
