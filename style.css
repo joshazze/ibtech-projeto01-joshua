@@ -6,10 +6,10 @@
 
 
 /* =====================================================
-   1. VARIÁVEIS — paleta, tipografia, espaçamento
+   1. VARIÁVEIS : paleta, tipografia, espaçamento
    ===================================================== */
 :root {
-  /* paleta — DIA (chalé com sol entrando) */
+  /* paleta : DIA (chalé com sol entrando) */
   --c-wall:        #5a3a22;
   --c-wall-line:   #4a2f1c;
   --c-wall-light:  #6b4528;
@@ -32,31 +32,31 @@
   --c-glow:        rgba(255, 209, 102, 0);    /* sem glow no dia */
   --stars-opacity: 0;
 
-  /* paleta — fixa entre os temas */
+  /* paleta : fixa entre os temas */
   --c-cork:        #c89968;
   --c-cork-dark:   #a87848;
   --c-pin-r:       #dc2626;
   --c-pin-y:       #facc15;
   --c-pin-b:       #2563eb;
 
-  /* tipografia */
-  --font-pixel:    "Press Start 2P", system-ui, monospace;
-  --font-mono:     "VT323", ui-monospace, "SFMono-Regular", monospace;
-  --font-body:     "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* tipografia (single pixel font everywhere) */
+  --font-pixel:    "Press Start 2P", ui-monospace, "SFMono-Regular", monospace;
+  --font-mono:     "Press Start 2P", ui-monospace, "SFMono-Regular", monospace;
+  --font-body:     "Press Start 2P", ui-monospace, "SFMono-Regular", monospace;
 
-  --fs-xs:   0.75rem;     /* 12 — micro labels */
-  --fs-sm:   0.875rem;    /* 14 — chips, captions */
-  --fs-base: 1rem;        /* 16 — corpo */
-  --fs-md:   1.125rem;    /* 18 — corpo destacado */
-  --fs-lg:   1.5rem;      /* 24 — h3 */
-  --fs-xl:   2rem;        /* 32 — section title */
-  --fs-2xl:  clamp(1.75rem, 7vw, 4rem);  /* hero */
+  --fs-xs:   0.5rem;      /* 8 px (caps, mini labels) */
+  --fs-sm:   0.55rem;     /* 8.8 px */
+  --fs-base: 0.625rem;    /* 10 px (corpo padrão) */
+  --fs-md:   0.75rem;     /* 12 px */
+  --fs-lg:   0.875rem;    /* 14 px (lede) */
+  --fs-xl:   1.125rem;    /* 18 px (section title) */
+  --fs-2xl:  clamp(1.25rem, 5vw, 2.5rem);  /* hero */
 
-  --lh-tight:  1.1;
-  --lh-snug:   1.3;
-  --lh-base:   1.55;
+  --lh-tight:  1.3;
+  --lh-snug:   1.6;
+  --lh-base:   1.85;        /* pixel font precisa de muita altura de linha */
 
-  /* espaçamento — ritmo de 4 */
+  /* espaçamento : ritmo de 4 */
   --sp-1: 0.25rem;
   --sp-2: 0.5rem;
   --sp-3: 0.75rem;
@@ -83,7 +83,7 @@
   --dur-slow:    420ms;
 }
 
-/* paleta — NOITE (luminária acesa, montanha de neve azulada) */
+/* paleta : NOITE (luminária acesa, montanha de neve azulada) */
 [data-theme="night"] {
   --c-wall:        #2b1810;
   --c-wall-line:   #1a0e08;
@@ -110,7 +110,7 @@
 
 
 /* =====================================================
-   2. RESET — light reset focado em pixel-art
+   2. RESET : light reset focado em pixel-art
    ===================================================== */
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -314,7 +314,7 @@ ul { list-style: none; padding: 0; }
 
 
 /* =====================================================
-   5. SCENE — base de cada "parede" do quarto
+   5. SCENE : base de cada "parede" do quarto
    ===================================================== */
 .scene {
   position: relative;
@@ -354,7 +354,7 @@ ul { list-style: none; padding: 0; }
 
 
 /* =====================================================
-   6. JANELA — paisagem em primeira pessoa
+   6. JANELA : paisagem em primeira pessoa
    ===================================================== */
 .scene--window {
   background: var(--c-wall);
@@ -601,7 +601,7 @@ ul { list-style: none; padding: 0; }
 
 
 /* =====================================================
-   7. MESA DE ESTUDOS — monitor + terminal
+   7. MESA DE ESTUDOS : monitor + terminal
    ===================================================== */
 .scene--desk { background: var(--c-wall); padding-top: var(--sp-9); }
 
@@ -912,7 +912,7 @@ ul { list-style: none; padding: 0; }
 
 
 /* =====================================================
-   9. MURAL — corkboard com polaroides
+   9. MURAL : corkboard com polaroides
    ===================================================== */
 .scene--corkboard {
   background: var(--c-wall);
@@ -1020,6 +1020,62 @@ ul { list-style: none; padding: 0; }
 }
 .postit small { font-family: var(--font-pixel); font-size: var(--fs-xs); }
 
+/* quadros emoldurados das frases (Napoleão · Virgílio · Dante) */
+.quote-frame {
+  position: relative;
+  z-index: 1;
+  background: var(--c-paper);
+  color: var(--c-ink);
+  padding: var(--sp-4) var(--sp-3);
+  border: 4px solid var(--c-ink);
+  outline: 3px solid var(--c-honey);
+  outline-offset: -10px;
+  box-shadow: var(--shadow-pixel);
+  transform: rotate(var(--rot, 0deg));
+  max-width: 240px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.quote-frame:hover {
+  transform: rotate(0deg) scale(1.04) translate(-2px, -3px);
+  box-shadow: 8px 10px 0 rgba(0,0,0,0.4);
+  z-index: 5;
+}
+.quote-frame blockquote {
+  margin: var(--sp-3) 0 var(--sp-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+.quote-frame__text {
+  font-family: var(--font-pixel);
+  font-size: 0.65rem;
+  line-height: 1.6;
+  color: var(--c-ink);
+  letter-spacing: 0;
+}
+.quote-frame__pt {
+  font-family: var(--font-pixel);
+  font-size: 0.55rem;
+  line-height: 1.7;
+  color: var(--c-ink-soft);
+  letter-spacing: 0;
+}
+.quote-frame figcaption {
+  font-family: var(--font-pixel);
+  font-size: 0.55rem;
+  color: var(--c-accent);
+  margin-top: var(--sp-3);
+  padding-top: var(--sp-2);
+  border-top: 2px dashed var(--c-ink);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .tv {
   position: relative;
   z-index: 1;
@@ -1070,7 +1126,7 @@ ul { list-style: none; padding: 0; }
 
 
 /* =====================================================
-   10. PRATELEIRA — livros (projetos) + troféu
+   10. PRATELEIRA : livros (projetos) + troféu
    ===================================================== */
 .scene--shelf {
   background: var(--c-wall);
@@ -1081,14 +1137,15 @@ ul { list-style: none; padding: 0; }
 
 .shelf {
   position: relative;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: 4px;
+  flex-wrap: wrap;
+  gap: 6px;
   padding: var(--sp-7) var(--sp-5) 0;
-  min-height: 260px;
+  min-height: 280px;
 }
 .shelf__plank {
   position: absolute;
@@ -1106,8 +1163,8 @@ ul { list-style: none; padding: 0; }
 
 .book {
   position: relative;
-  width: var(--book-w, 32px);
-  height: var(--book-h, 180px);
+  width: var(--book-w, 48px);
+  height: var(--book-h, 200px);
   background: var(--book-color, var(--c-accent));
   border: 3px solid var(--c-ink);
   box-shadow: var(--shadow-pixel-sm);
@@ -1120,10 +1177,21 @@ ul { list-style: none; padding: 0; }
 .book::before {
   content: "";
   position: absolute;
-  top: 8px; bottom: 8px;
-  left: 4px;
+  top: 10px; bottom: 10px;
+  left: 5px;
+  right: 5px;
+  border-top: 2px solid rgba(255,255,255,0.18);
+  border-bottom: 2px solid rgba(0,0,0,0.25);
+  pointer-events: none;
+}
+.book::after {
+  content: "";
+  position: absolute;
+  top: 6px; bottom: 6px;
+  left: 6px;
   width: 2px;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.22);
+  pointer-events: none;
 }
 .book:hover, .book:focus-visible {
   transform: translateY(-12px);
@@ -1193,7 +1261,7 @@ ul { list-style: none; padding: 0; }
 
 
 /* =====================================================
-   11. MESA DE CABECEIRA — luminária, despertador, contato
+   11. MESA DE CABECEIRA : luminária, despertador, contato
    ===================================================== */
 .scene--nightstand { background: var(--c-wall); padding-top: var(--sp-9); padding-bottom: var(--sp-9); }
 
@@ -1424,7 +1492,7 @@ ul { list-style: none; padding: 0; }
 
 
 /* =====================================================
-   13. FOOTER — porta
+   13. FOOTER : porta
    ===================================================== */
 .footer {
   background: var(--c-floor);
@@ -1485,7 +1553,7 @@ ul { list-style: none; padding: 0; }
 
 
 /* =====================================================
-   14. MODAL — abre quando clicam num livro
+   14. MODAL : abre quando clicam num livro
    ===================================================== */
 .modal {
   border: 0;
@@ -1585,7 +1653,7 @@ ul { list-style: none; padding: 0; }
 
 
 /* =====================================================
-   15. ANIMAÇÕES — entrada via IntersectionObserver
+   15. ANIMAÇÕES : entrada via IntersectionObserver
    ===================================================== */
 .reveal {
   opacity: 0;
@@ -1597,7 +1665,7 @@ ul { list-style: none; padding: 0; }
   transform: translateY(0);
 }
 
-/* easter egg — modo arcade */
+/* easter egg : modo arcade */
 body.is-arcade .scene__content {
   animation: arcade-shake 0.4s ease-in-out;
 }
@@ -1670,7 +1738,7 @@ body.is-arcade {
     --fs-xl:  1.125rem;
     --fs-lg:  1.125rem;
     --fs-md:  1rem;
-    --fs-xs:  0.625rem;          /* 10 — pixel font fica largo demais maior */
+    --fs-xs:  0.625rem;          /* 10 : pixel font fica largo demais maior */
     --fs-2xl: clamp(1.5rem, 12vw, 3rem);
     --sp-6: 1.25rem;             /* aperta padding interno dos cards */
     --sp-7: 2rem;
@@ -1718,9 +1786,21 @@ body.is-arcade {
 
   .corkboard { grid-template-columns: 1fr; gap: var(--sp-5); }
 
-  .shelf { gap: 3px; padding: var(--sp-6) var(--sp-3) 0; min-height: 220px; }
-  .book { transform: scale(0.85); transform-origin: bottom; margin-bottom: 14px; }
-  .trophy { transform: scale(0.85); transform-origin: bottom; margin-left: var(--sp-3); }
+  .shelf {
+    gap: 4px;
+    padding: var(--sp-6) var(--sp-3) 0;
+    min-height: 240px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    scrollbar-width: thin;
+    scrollbar-color: var(--c-honey) var(--c-wall-line);
+  }
+  .shelf::-webkit-scrollbar { height: 8px; }
+  .shelf::-webkit-scrollbar-track { background: var(--c-wall-line); }
+  .shelf::-webkit-scrollbar-thumb { background: var(--c-honey); }
+  .book { transform: scale(0.9); transform-origin: bottom; margin-bottom: 14px; flex-shrink: 0; }
+  .trophy { transform: scale(0.9); transform-origin: bottom; margin-left: var(--sp-3); flex-shrink: 0; }
 
   .nightstand { width: 110px; height: 110px; }
   .lamp { bottom: 110px; transform: scale(0.7); }
@@ -1739,7 +1819,7 @@ body.is-arcade {
   .scene--window .scene__content--center { margin-top: 40vh; }
 }
 
-/* monitores muito largos — não esticar */
+/* monitores muito largos : não esticar */
 @media (min-width: 1920px) {
   .scene { padding: var(--sp-9) var(--sp-6); }
   .corkboard { max-width: 1400px; }

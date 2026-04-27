@@ -5,11 +5,11 @@
    1. toggle de tema dia/noite (localStorage + prefers-color-scheme)
    2. copiar e-mail (Clipboard API + feedback visual)
    3. animação de entrada (IntersectionObserver)
-   4. EXTRA — modal de projeto (Esc, click fora, foco preso)
-   5. EXTRA — typewriter na frase de apresentação
-   6. EXTRA — menu mobile (Esc, click fora)
-   7. EXTRA — relógio do despertador em tempo real
-   8. EXTRA — easter egg: konami code → modo arcade
+   4. EXTRA : modal de projeto (Esc, click fora, foco preso)
+   5. EXTRA : typewriter na frase de apresentação
+   6. EXTRA : menu mobile (Esc, click fora)
+   7. EXTRA : relógio do despertador em tempo real
+   8. EXTRA : easter egg: konami code → modo arcade
    ===================================================== */
 (() => {
   'use strict';
@@ -66,7 +66,7 @@
 
 
   /* ===================================================
-     2. COPIAR E-MAIL — Clipboard API + feedback ~2s
+     2. COPIAR E-MAIL : Clipboard API + feedback ~2s
      - fallback pra navegadores antigos (textarea + execCommand)
      - feedback visual e anúncio pra leitor de tela
      =================================================== */
@@ -103,7 +103,7 @@
 
 
   /* ===================================================
-     3. ANIMAÇÃO DE ENTRADA — IntersectionObserver
+     3. ANIMAÇÃO DE ENTRADA : IntersectionObserver
      - dispara uma vez por elemento (.reveal → .is-visible)
      - se IntersectionObserver não existir, mostra tudo
      =================================================== */
@@ -125,73 +125,167 @@
 
 
   /* ===================================================
-     4. MODAL DE PROJETO — abre no clique do livro
+     4. MODAL DE PROJETO : abre no clique do livro
      - usa <dialog>; fallback gracioso via .open
      - Esc fecha (nativo do dialog), click no backdrop fecha
      - retorna foco pro botão que abriu
      =================================================== */
   const projects = {
-    ibsala: {
-      title: 'IbSala — Plataforma Interna',
-      period: 'jan/2026 → presente · em produção',
-      role: 'designer + dev solo. python/flask + gcp + pwa.',
+    torino: {
+      title: 'Liceo Scientifico · Fundação Torino',
+      period: 'ago/2020 a jul/2024',
+      role: 'ensino médio com currículo italiano.',
       bullets: [
-        '30+ usuários ativos diários, ~150 push automáticos por semana',
-        'backend python/flask hospedado em google cloud (compute engine + nginx)',
-        'integração com apis externas pra captura e normalização de dados',
-        'database via google sheets api com pipeline de limpeza',
-        'web push (vapid) com agendamento via scheduler',
-        'pwa instalável em ios e android, https com let\'s encrypt',
-        'painel admin em tempo real, rate limiting'
+        'escola ítalo-brasileira em belo horizonte, currículo do liceo scientifico italiano',
+        'base forte em matemática, física, latim, filosofia e literatura',
+        'foi onde aprendi italiano com fluência e adicionei o alemão como quarta língua',
+        'aprendi a estudar de verdade, não apenas a passar de prova'
       ],
-      stack: ['python', 'flask', 'gcp', 'nginx', 'sheets api', 'web push', 'vapid', 'pwa']
+      stack: ['italiano', 'liceo scientifico', 'pt · it · en · es · de']
     },
-    carreirai: {
-      title: 'CarreirAI — Assistente de Carreira',
-      period: 'jun/2025 → jan/2026 · acelerada no ibmec hubs bh',
-      role: 'co-fundador. arquitetura técnica + direção de produto.',
+    patrimar: {
+      title: 'Estágio · Grupo Patrimar',
+      period: 'dez/2022 a jan/2023 · belo horizonte',
+      role: 'estagiário em engenharia de projetos.',
       bullets: [
-        'vencedora do hackathon nacional ibmec — categoria ia aplicada (regional bh)',
-        'mapeia perfil do estudante e gera recomendações personalizadas',
-        'streamline do processo de orientação acadêmica',
-        'aceleração subsequente pelo programa ibmec hubs bh'
+        'apoio aos times executivos em obras ativas',
+        'uso de autocad para revisões técnicas e construcode para documentação',
+        'colaboração entre disciplinas para resolver problemas em tempo real',
+        'primeiro contato profissional com obra real, saí com mais perguntas do que respostas'
       ],
-      stack: ['ia generativa', 'prompt engineering', 'arquitetura', 'product']
-    },
-    ibbot: {
-      title: 'IbBot — Liga de Robótica',
-      period: 'ago/2025 → presente',
-      role: 'co-fundador & diretor.',
-      bullets: [
-        'liga acadêmica de robótica do ibmec bh',
-        'foco em integração de hardware e sistemas embarcados',
-        'workshops hands-on de montagem e programação de robôs',
-        'time crescente de estudantes-engenheiros'
-      ],
-      stack: ['embedded', 'c', 'hardware', 'liderança técnica']
-    },
-    ibtech: {
-      title: 'IbTech — Diretoria',
-      period: 'jan/2026 → presente',
-      role: 'diretor da liga acadêmica de desenvolvimento de software.',
-      bullets: [
-        'coordeno workshops técnicos, hackathons e projetos hands-on',
-        'gerencio time de devs em ferramentas internas e projetos de extensão',
-        'conecto estudantes a desafios reais de engenharia',
-        'desenhei a trilha frontend 2026.1 (este projeto faz parte dela)'
-      ],
-      stack: ['gestão técnica', 'mentoria', 'arquitetura de currículo']
+      stack: ['autocad', 'construcode', 'eng. civil', 'documentação técnica']
     },
     logo150: {
-      title: 'Logo · 150 anos da Imigração Italiana',
-      period: '2024 · vencedor nacional',
-      role: 'designer.',
+      title: 'Logo · 150 anos da Imigração Italiana no Brasil',
+      period: '2024',
+      role: 'inscrição autoral em concurso aberto.',
       bullets: [
-        'concurso aberto pra logomarca dos 150 anos da imigração italiana no brasil',
-        'inscrição vencedora — escolhida entre dezenas de propostas',
-        'cruzamento entre identidade italiana, raízes brasileiras e símbolo do escotismo'
+        'concurso aberto para a logomarca dos 150 anos da imigração italiana no brasil',
+        'minha proposta foi a escolhida entre as inscrições recebidas',
+        'cruzei identidade italiana, raízes brasileiras e o símbolo do escotismo'
       ],
-      stack: ['identidade visual', 'concurso', 'branding']
+      stack: ['identidade visual', 'concurso', 'design']
+    },
+    escoteiro: {
+      title: 'Escoteiro da Pátria',
+      period: '2024 · união dos escoteiros do brasil',
+      role: 'reconhecimento concedido pela trajetória no escotismo.',
+      bullets: [
+        'título concedido pela ueb. reconhece serviço prestado e formação no movimento',
+        'foram anos convivendo com pessoas diferentes, acampamento, projeto comunitário',
+        'foi onde aprendi a tocar projeto em grupo até o final',
+        'virou base para a maior parte do que faço hoje'
+      ],
+      stack: ['liderança', 'projeto comunitário', 'campismo', 'serviço']
+    },
+    ibmec: {
+      title: 'Ibmec BH · Engenharia da Computação',
+      period: 'jan/2025 a jun/2029 (em curso)',
+      role: 'graduação em curso.',
+      bullets: [
+        'bacharelado em engenharia da computação',
+        'mistura de engenharia eletrônica, software, sistemas embarcados e gestão',
+        'entrei cedo em ligas e projetos extracurriculares',
+        'estou descobrindo o que mais me interessa conforme avanço'
+      ],
+      stack: ['c', 'python', 'matemática', 'eletrônica', 'sistemas']
+    },
+    carreirai: {
+      title: 'CarreirAI · Hackathon Ibmec',
+      period: 'jun/2025 a jan/2026',
+      role: 'cofundador. parte de um time pequeno.',
+      bullets: [
+        'projeto criado no 2º hackathon nacional ibmec, na categoria ia aplicada',
+        'a equipe foi vencedora da etapa regional belo horizonte',
+        'a ideia é um assistente de orientação acadêmica que mapeia perfil e sugere caminhos',
+        'depois do hackathon, o projeto foi acelerado pelo ibmec hubs bh',
+        'aprendi bastante sobre product e arquitetura no processo'
+      ],
+      stack: ['ia generativa', 'prompt engineering', 'product', 'time pequeno']
+    },
+    ibbot: {
+      title: 'IbBot · Liga de Robótica',
+      period: 'ago/2025 até o presente',
+      role: 'cofundador. atualmente na diretoria.',
+      bullets: [
+        'liga acadêmica de robótica do ibmec bh, com foco em hardware e sistemas embarcados',
+        'fundamos junto com outros alunos que queriam mexer com robô na prática',
+        'rodamos workshops de montagem e programação',
+        'o time cresce conforme a liga amadurece'
+      ],
+      stack: ['embedded', 'c', 'hardware', 'comunidade']
+    },
+    discreta: {
+      title: 'Monitoria de Matemática Discreta',
+      period: 'ago/2025 a dez/2025',
+      role: 'monitor (TA).',
+      bullets: [
+        'mentoria semanal para alunos de matemática discreta',
+        'apoio em listas de exercício e provas',
+        'sempre buscando conectar teoria com aplicação prática em ciência da computação',
+        'ensinar é uma boa forma de descobrir aquilo que você ainda não sabe'
+      ],
+      stack: ['matemática discreta', 'mentoria', 'ensino']
+    },
+    softskills: {
+      title: 'Soft Skills Track · Adaptive Communication',
+      period: '2025 · workshop ibmec',
+      role: 'participante.',
+      bullets: [
+        'workshop sobre comunicação adaptativa para contextos profissionais',
+        'útil para trabalho em times multidisciplinares',
+        'esperava algo de manual e saí com algumas práticas que uso até hoje'
+      ],
+      stack: ['comunicação', 'soft skills']
+    },
+    web: {
+      title: 'Intermediate Web Development',
+      period: '2025 · certificação',
+      role: 'curso intermediário.',
+      bullets: [
+        'fundamentos consistentes de html, css e javascript',
+        'base que esta página usa diretamente'
+      ],
+      stack: ['html', 'css', 'javascript']
+    },
+    frontend: {
+      title: 'Intermediate Front-End Development',
+      period: '2025 · certificação',
+      role: 'curso intermediário.',
+      bullets: [
+        'foco na construção de interfaces e em padrões de frontend',
+        'reforçou o hábito de organizar css por seção e utilizar variáveis'
+      ],
+      stack: ['frontend', 'arquitetura css', 'interfaces']
+    },
+    ibtech: {
+      title: 'IbTech · Diretoria',
+      period: 'jan/2026 até o presente',
+      role: 'diretor da liga de desenvolvimento de software.',
+      bullets: [
+        'coordeno workshops técnicos, hackathons e projetos hands-on',
+        'ajudo a manter o time de devs trabalhando em ferramentas internas',
+        'desenhei a trilha frontend 2026.1. esta página faz parte dela',
+        'o trabalho é coletivo: a diretoria é um time, não uma pessoa só'
+      ],
+      stack: ['gestão técnica', 'mentoria', 'liga acadêmica']
+    },
+    ibsala: {
+      title: 'IbSala · Plataforma Interna',
+      period: 'jan/2026 até o presente · em produção',
+      role: 'desenho e desenvolvimento.',
+      bullets: [
+        'plataforma web que atende cerca de 30 usuários ativos por dia',
+        'aproximadamente 150 notificações automáticas por semana via web push',
+        'backend python/flask hospedado em google cloud (compute engine e nginx)',
+        'integração com apis externas para captura e normalização de dados',
+        'banco via google sheets api com pipeline de limpeza',
+        'web push (vapid) com agendamento via scheduler',
+        'pwa instalável em ios e android, https via let\'s encrypt',
+        'painel admin em tempo real e rate limiting',
+        'estou aprendendo a manter sistema em produção. ainda há muito a melhorar'
+      ],
+      stack: ['python', 'flask', 'gcp', 'nginx', 'sheets api', 'web push', 'vapid', 'pwa']
     }
   };
 
@@ -243,13 +337,17 @@
 
 
   /* ===================================================
-     5. TYPEWRITER — frase rotativa na hero
+     5. TYPEWRITER : frase rotativa na hero
      =================================================== */
   const phrases = [
-    'computer engineering · ai · robotics',
-    'backend · gcp · pwa · web push',
-    'vibe coding desde 2024',
-    'pt · it · en · es · de'
+    'engenharia da computação · ibmec bh',
+    'backend python · gcp · pwa',
+    'ia aplicada · prompt engineering',
+    'cinco línguas: pt · it · en · es · de',
+    'liderança em ligas acadêmicas',
+    'projetos em produção desde 2024',
+    'curiosidade > certeza',
+    'aprendendo um pouco a cada dia'
   ];
   const target = $('#typewriter');
   let pIdx = 0, cIdx = 0, deleting = false;
@@ -282,7 +380,7 @@
 
 
   /* ===================================================
-     6. MENU MOBILE — hambúrguer (Esc + click fora)
+     6. MENU MOBILE : hambúrguer (Esc + click fora)
      =================================================== */
   const navToggle = $('.nav-toggle');
   const navList   = $('#nav-list');
@@ -307,7 +405,7 @@
 
 
   /* ===================================================
-     7. RELÓGIO DO DESPERTADOR — atualiza a cada 30s
+     7. RELÓGIO DO DESPERTADOR : atualiza a cada 30s
      =================================================== */
   const clockEl = $('#clockDigits');
   const updateClock = () => {
@@ -322,7 +420,7 @@
 
 
   /* ===================================================
-     8. KONAMI CODE — easter egg
+     8. KONAMI CODE : easter egg
      ↑ ↑ ↓ ↓ ← → ← → b a → modo arcade (scanlines + shake)
      =================================================== */
   const KONAMI = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown',
