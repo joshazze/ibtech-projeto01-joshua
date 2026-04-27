@@ -1,37 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 96" shape-rendering="crispEdges" width="240" height="288">
-  <title>Foto polaroide pixelada de uma montanha com bandeira escoteira no topo</title>
+  <title>Polaroide pixelada de uma cafeteira italiana moka com vapor saindo.</title>
   <!-- polaroid frame -->
   <rect width="80" height="96" fill="#f5ecd9"/>
-  <rect x="4" y="4" width="72" height="72" fill="#1a1a2e"/>
-  <!-- sky gradient (chunky) -->
-  <rect x="4" y="4" width="72" height="20" fill="#7ec8e3"/>
-  <rect x="4" y="14" width="72" height="10" fill="#a8dadc"/>
-  <!-- sun -->
-  <rect x="58" y="8" width="8" height="8" fill="#ffd166"/>
-  <rect x="56" y="10" width="2" height="4" fill="#ffd166"/>
-  <rect x="66" y="10" width="2" height="4" fill="#ffd166"/>
-  <rect x="60" y="6" width="4" height="2" fill="#ffd166"/>
-  <rect x="60" y="16" width="4" height="2" fill="#ffd166"/>
-  <!-- back mountains -->
-  <polygon points="4,40 16,24 28,40" fill="#5e6472"/>
-  <polygon points="20,44 36,22 52,44" fill="#4a5061"/>
-  <polygon points="44,42 60,26 76,42" fill="#5e6472"/>
-  <!-- snow caps -->
-  <polygon points="32,28 36,22 40,28" fill="#f5ecd9"/>
-  <polygon points="56,32 60,26 64,32" fill="#f5ecd9"/>
-  <!-- foreground hill -->
-  <rect x="4" y="44" width="72" height="32" fill="#3d6b3d"/>
-  <rect x="4" y="44" width="72" height="4" fill="#4f8a4f"/>
-  <!-- pine trees -->
-  <rect x="10" y="46" width="2" height="6" fill="#2b4a2b"/>
-  <polygon points="8,52 12,42 16,52" fill="#2b4a2b"/>
-  <rect x="22" y="48" width="2" height="6" fill="#2b4a2b"/>
-  <polygon points="20,54 24,46 28,54" fill="#2b4a2b"/>
-  <rect x="64" y="48" width="2" height="6" fill="#2b4a2b"/>
-  <polygon points="62,54 66,46 70,54" fill="#2b4a2b"/>
-  <!-- flag pole on summit -->
-  <rect x="37" y="14" width="1" height="10" fill="#2b1810"/>
-  <rect x="38" y="14" width="6" height="4" fill="#8b3a3a"/>
+  <rect x="4" y="4" width="72" height="72" fill="#1a0e08"/>
+  <!-- counter / wood surface -->
+  <rect x="4" y="56" width="72" height="20" fill="#3d2817"/>
+  <rect x="4" y="56" width="72" height="2" fill="#5a3a22"/>
+  <!-- background warm -->
+  <rect x="4" y="4" width="72" height="52" fill="#2b1810"/>
+  <!-- steam wisps -->
+  <rect x="36" y="10" width="2" height="2" fill="#d4c8a8" opacity="0.7"/>
+  <rect x="38" y="8"  width="2" height="2" fill="#d4c8a8" opacity="0.5"/>
+  <rect x="42" y="6"  width="2" height="2" fill="#d4c8a8" opacity="0.4"/>
+  <rect x="44" y="4"  width="2" height="2" fill="#d4c8a8" opacity="0.3"/>
+  <rect x="32" y="14" width="2" height="2" fill="#d4c8a8" opacity="0.5"/>
+  <rect x="46" y="12" width="2" height="2" fill="#d4c8a8" opacity="0.5"/>
+  <!-- moka top chamber -->
+  <rect x="30" y="22" width="20" height="4"  fill="#6b6b6b"/>
+  <rect x="30" y="26" width="20" height="14" fill="#8a8a8a"/>
+  <rect x="32" y="26" width="2"  height="14" fill="#a0a0a0"/>
+  <rect x="46" y="26" width="2"  height="14" fill="#5a5a5a"/>
+  <!-- knob on top -->
+  <rect x="38" y="18" width="4" height="4" fill="#1a0e08"/>
+  <rect x="36" y="20" width="8" height="2" fill="#1a0e08"/>
+  <!-- pour spout -->
+  <rect x="50" y="28" width="4" height="2" fill="#6b6b6b"/>
+  <rect x="50" y="30" width="4" height="2" fill="#8a8a8a"/>
+  <!-- middle band (separator) -->
+  <rect x="28" y="40" width="24" height="2" fill="#1a0e08"/>
+  <!-- bottom chamber (wider) -->
+  <rect x="28" y="42" width="24" height="14" fill="#8a8a8a"/>
+  <rect x="28" y="42" width="2"  height="14" fill="#a0a0a0"/>
+  <rect x="50" y="42" width="2"  height="14" fill="#5a5a5a"/>
+  <!-- handle -->
+  <rect x="52" y="42" width="2"  height="14" fill="#1a0e08"/>
+  <rect x="54" y="42" width="6"  height="3"  fill="#1a0e08"/>
+  <rect x="54" y="53" width="6"  height="3"  fill="#1a0e08"/>
+  <rect x="58" y="44" width="2"  height="11" fill="#1a0e08"/>
+  <!-- cup beside it (espresso) -->
+  <rect x="14" y="46" width="10" height="8" fill="#f5ecd9"/>
+  <rect x="14" y="46" width="10" height="2" fill="#5a3a22"/>
+  <!-- cup handle -->
+  <rect x="24" y="48" width="2" height="4" fill="#f5ecd9"/>
+  <!-- tiny coffee steam -->
+  <rect x="17" y="42" width="2" height="2" fill="#d4c8a8" opacity="0.6"/>
+  <rect x="20" y="40" width="2" height="2" fill="#d4c8a8" opacity="0.4"/>
   <!-- caption -->
-  <text x="40" y="88" font-family="monospace" font-size="6" fill="#2b1810" text-anchor="middle">PÁTRIA · 2024</text>
+  <text x="40" y="88" font-family="monospace" font-size="6" fill="#2b1810" text-anchor="middle">UN CAFFÈ, GRAZIE</text>
 </svg>

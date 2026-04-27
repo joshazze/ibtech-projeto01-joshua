@@ -1,8 +1,20 @@
 /* =====================================================
    JOSHUA AZZE DISTEL · CARTÃO DE VISITA · IBTECH 2026.1
    ----------------------------------------------------
-   um quarto de chalé pixelado em primeira pessoa.
+   um quarto pixelado em primeira pessoa.
+   tipografia única: press start 2p (google fonts).
    ===================================================== */
+
+/* fonte importada com font-display: block para forçar a
+   espera do carregamento, garantindo o pixel art em todo
+   o texto (sem flash com fonte de sistema). */
+@font-face {
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/pressstart2p/v16/e3t4euO8T-267oIAQAu6jDQyK0nS.ttf) format("truetype");
+}
 
 
 /* =====================================================
@@ -39,16 +51,16 @@
   --c-pin-y:       #facc15;
   --c-pin-b:       #2563eb;
 
-  /* tipografia (single pixel font everywhere) */
-  --font-pixel:    "Press Start 2P", ui-monospace, "SFMono-Regular", monospace;
-  --font-mono:     "Press Start 2P", ui-monospace, "SFMono-Regular", monospace;
-  --font-body:     "Press Start 2P", ui-monospace, "SFMono-Regular", monospace;
+  /* tipografia (uma fonte só em todo o site) */
+  --font-pixel:    "Press Start 2P", monospace;
+  --font-mono:     "Press Start 2P", monospace;
+  --font-body:     "Press Start 2P", monospace;
 
   --fs-xs:   0.5rem;      /* 8 px (caps, mini labels) */
   --fs-sm:   0.55rem;     /* 8.8 px */
-  --fs-base: 0.625rem;    /* 10 px (corpo padrão) */
-  --fs-md:   0.75rem;     /* 12 px */
-  --fs-lg:   0.875rem;    /* 14 px (lede) */
+  --fs-base: 0.6875rem;   /* 11 px (corpo padrão) */
+  --fs-md:   0.8125rem;   /* 13 px */
+  --fs-lg:   0.9375rem;   /* 15 px (lede) */
   --fs-xl:   1.125rem;    /* 18 px (section title) */
   --fs-2xl:  clamp(1.25rem, 5vw, 2.5rem);  /* hero */
 
