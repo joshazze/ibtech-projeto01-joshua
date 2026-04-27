@@ -1,6 +1,8 @@
 # ibtech-projeto01-joshua
 
 > **Joshua Azze Distel** — IbTech · Trilha Frontend · Projeto 01 · 2026.1
+>
+> 🌐 **Ao vivo:** https://joshazze.github.io/ibtech-projeto01-joshua/
 
 Cartão de visita pessoal feito em **HTML, CSS e JavaScript puros**. Sem framework, sem template, sem build. Vanilla.
 
