@@ -1149,15 +1149,15 @@ ul { list-style: none; padding: 0; }
 
 .shelf {
   position: relative;
-  max-width: 1100px;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 6px;
-  padding: var(--sp-7) var(--sp-5) 0;
-  min-height: 280px;
+  flex-wrap: nowrap;
+  gap: 5px;
+  padding: var(--sp-7) var(--sp-4) 0;
+  min-height: 320px;
 }
 .shelf__plank {
   position: absolute;
@@ -1232,43 +1232,73 @@ ul { list-style: none; padding: 0; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: var(--sp-2);
   margin-left: var(--sp-5);
   margin-bottom: 18px;
-  filter: drop-shadow(2px 2px 0 rgba(0,0,0,0.3));
+  flex-shrink: 0;
 }
-.trophy__cup {
-  width: 36px; height: 30px;
-  background: var(--c-honey);
-  border: 3px solid var(--c-ink);
-  position: relative;
-  border-bottom-left-radius: 50% 30%;
-  border-bottom-right-radius: 50% 30%;
-}
-.trophy__cup::before, .trophy__cup::after {
-  content: "";
-  position: absolute;
-  top: 6px;
-  width: 8px; height: 14px;
-  border: 3px solid var(--c-ink);
-  background: transparent;
-  border-radius: 50%;
-}
-.trophy__cup::before { left: -10px; }
-.trophy__cup::after  { right: -10px; }
-.trophy__base {
-  width: 28px; height: 12px;
-  background: var(--c-honey);
-  border: 3px solid var(--c-ink);
-  margin-top: -2px;
-}
-.trophy small {
-  font-family: var(--font-mono);
-  font-size: var(--fs-sm);
+.trophy__label {
+  font-family: var(--font-pixel);
+  font-size: 0.65rem;
   color: var(--c-paper);
   text-align: center;
-  max-width: 140px;
-  margin-top: 4px;
+  line-height: 1.8;
+  letter-spacing: 0;
+  text-transform: lowercase;
+  margin-bottom: var(--sp-3);
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.6);
+}
+.trophy__cup {
+  position: relative;
+  width: 96px;
+  height: 84px;
+  background: var(--c-honey);
+  border: 4px solid var(--c-ink);
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+  background-image:
+    linear-gradient(rgba(255,255,255,0.22) 14%, transparent 14%),
+    linear-gradient(rgba(0,0,0,0.20) 86%, transparent 86%);
+}
+/* orelhas (handles) */
+.trophy__cup::before,
+.trophy__cup::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  width: 22px;
+  height: 44px;
+  border: 4px solid var(--c-ink);
+  background: transparent;
+  z-index: -1;
+}
+.trophy__cup::before { left: -24px; border-right: 0; }
+.trophy__cup::after  { right: -24px; border-left: 0; }
+.trophy__neck {
+  width: 36px;
+  height: 22px;
+  background: var(--c-honey);
+  border: 4px solid var(--c-ink);
+  margin-top: -2px;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+}
+.trophy__base {
+  width: 88px;
+  height: 24px;
+  background: var(--c-honey);
+  border: 4px solid var(--c-ink);
+  margin-top: -2px;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+  position: relative;
+}
+.trophy__base::after {
+  content: "1";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-pixel);
+  font-size: 0.75rem;
+  color: var(--c-ink);
 }
 
 
